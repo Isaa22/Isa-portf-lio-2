@@ -1,0 +1,150 @@
+/* Definindo as cores principais */
+:root {
+  --cor-primaria: #6a0dad; /* Roxo */
+  --cor-secundaria: #4b0082; /* Roxo mais escuro */
+  --cor-fundo: #f5f5f5;
+  --cor-texto: #333;
+  --cor-texto-secundario: #777;
+  --fonte-principal: 'Segoe UI', sans-serif;
+}
+
+/* Resetando margens e paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+/* Estilizando o header */
+header {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--cor-secundaria);
+}
+
+/* Seções gerais */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--cor-primaria);
+}
+
+section p {
+  font-size: 1.1rem;
+  color: var(--cor-texto-secundario);
+}
+
+/* Estilizando os projetos */
+.projeto {
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.projeto h3 {
+  font-size: 1.8rem;
+  color: var(--cor-primaria);
+}
+
+.projeto p {
+  font-size: 1.1rem;
+  color: var(--cor-texto-secundario);
+}
+
+/* Formulário de contato */
+form input, form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+form button {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: var(--cor-secundaria);
+}
+
+/* Estilizando o footer */
+footer {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+
+  .projeto {
+    max-width: 95%;
+  }
+}
